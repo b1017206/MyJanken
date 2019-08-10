@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyJanken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-hl-7ds">
+                                <rect key="frame" x="0.0" y="44" width="414" height="662"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvh-bQ-r3I">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="8uL-Sa-Ton"/>
+                                    <constraint firstAttribute="height" constant="100" id="zea-wp-jGs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="じゃんけんをする！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxb-2j-uaN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これからじゃんけんをします" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG7-Gm-WDZ">
+                                <rect key="frame" x="0.0" y="714" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0WL-B4-aFx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.94901960784313721" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0x9-vv-FeE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uG7-Gm-WDZ" secondAttribute="trailing" id="2SD-SF-CSf"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AVc-cl-xjd"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="top" secondItem="uG7-Gm-WDZ" secondAttribute="bottom" constant="118" id="Gwh-cr-fLt"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JqT-wu-il2"/>
+                            <constraint firstItem="uG7-Gm-WDZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MdS-I5-y7c"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Wwq-5x-89w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tvh-bQ-r3I" secondAttribute="bottom" id="XTN-hO-wa8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tvh-bQ-r3I" secondAttribute="trailing" id="bC5-Gw-pdt"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gza-Ef-BM3"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tjr-aE-iEQ"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="top" secondItem="uG7-Gm-WDZ" secondAttribute="bottom" constant="8" symbolic="YES" id="urK-M0-Qnp"/>
+                            <constraint firstItem="tvh-bQ-r3I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yVG-Rn-bp8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="3mM-hl-7ds" id="uRO-1n-Pce"/>
+                        <outlet property="answerLabel" destination="uG7-Gm-WDZ" id="fgU-n6-CFu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
